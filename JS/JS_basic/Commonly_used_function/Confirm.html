@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xem ví dụ hàm alert</title>
+</head>
+
+<body>
+  <button id="btn">Run code</button>
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+      var result = confirm("chúng ta có chắc chắn muốn xóa?");
+      if (result === true) {
+        alert("Người dùng đã chọn OK");
+      } else {
+        alert("Người dùng đã chọn Hủy bỏ");
+      }
+    });
+  </script>
+</body>
+
+</html>

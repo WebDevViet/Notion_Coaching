@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xem ví dụ hàm alert</title>
+</head>
+
+<body>
+  <button id="btn">Run code</button>
+  <span id="number">0</span>
+  <script>
+    const btn = document.getElementById("btn");
+    let number = document.getElementById("number");
+    let counter = parseInt(number.innerText);
+    // Lấy giá trị hiện tại của thẻ span dưới dạng số nguyên
+    btn.addEventListener("click", () => {
+      setInterval(function() {
+        ++counter;
+        number.innerText = counter;
+      }, 1000);
+      // Sau mỗi 1000ms, thẻ span sẽ được cập nhật giá trị mới
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Coaching</title>
+  <link rel="stylesheet" href="./assets/style.css">
+
+
+</head>
+
+<body>
+  <header>
+    <h1>Hi, have a good day 😄</h1>
+  </header>
+  <main>
+
+    <h2>HTML</h2>
+    <ol class="chapter-list">
+      <li class="chapter-item">
+        <h3 class="chapter-heading">
+          Làm quen với HTML
+        </h3>
+        <ol class="lesson-list">
+          <li class="lesson-item">
+            <a href="HTML\HTML_basic\HTML_CSS_JavaScript_roles.html">Vai trò của HTML, CSS, Javascript</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+    <h2>CSS</h2>
+    <ol class="chapter-list">
+      <li class="chapter-item">
+        <h3 class="chapter-heading">
+          CSS selectors cơ bản
+        </h3>
+        <ol class="lesson-list">
+          <li class="lesson-item">
+            <a href="CSS\CSS_selector\What_is_CSS_selector.html">CSS selectors là gì?</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
+
+
+
+    <h2>JS</h2>
+    <ol class="chapter-list">
+      <li class="chapter-item">
+        <h3 class="chapter-heading">
+          JS cơ bản
+        </h3>
+        <ol class="lesson-list">
+          <li class="lesson-item">
+            <h4 class="lesson-heading">Hàm thường dùng</h4>
+            <ul class="part-list">
+              <li><a href="JS\JS_basic\Commonly_used_function\Alert.html">Hàm Alert</a></li>
+              <li><a href="JS\JS_basic\Commonly_used_function\Confirm.html">Hàm Confirm</a></li>
+              <li><a href="JS\JS_basic\Commonly_used_function\SetInterval.html">Hàm SetInterval</a></li>
+              <li><a href="JS\JS_basic\Commonly_used_function\SetTimeout.html">Hàm SetTimeout</a></li>
+            </ul>
+          </li>
+          <li class="lesson-item">
+            <a href="JS\JS_basic\Commonly_used_function\Expression.html">Biểu thức</a>
+          </li>
+        </ol>
+      </li>
+
+    </ol>
+
+
+
+  </main>
+  <script>
+    var listLink = document.querySelectorAll("a");
+    listLink.forEach((link) => {
+      if (!link.hasAttribute("target")) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noreferrer noopener");
+      }
+    })
+  </script>
+</body>
+
+</html>

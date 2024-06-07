@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xem ví dụ hàm alert</title>
+</head>
+
+<body>
+  <button id="btn">Run code</button>
+  <script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+      setTimeout(function() {
+        alert("Xin Chào!");
+        // Sau 1000ms thì hộp thoại sẽ hiển thị
+      }, 1000);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+:root {
+   --primary-icon: #05cfff;
+   --primary-color: #d7d7dc;
+   font-size: 62.5%;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   background-color: #030d22;
+   color: var(--primary-color);
+}
+
+main {
+   width: 1300px;
+   max-width: calc(100% - 48px);
+   margin: 40px auto;
+}
+
+h1 {
+   padding-top: 40px;
+   font-family: "Itim", cursive;
+   text-align: center;
+   font-weight: 400;
+   font-size: 4rem;
+   color: var(--primary-icon);
+}
+
+h2 {
+   margin: 50px 0 10px;
+   font-size: 3rem;
+   color: #ed5ab3;
+}
+
+h3 {
+   font-weight: 600;
+   font-size: 2.6rem;
+}
+
+h4 {
+   margin: 3px 0 5px;
+   font-size: 2rem;
+}
+
+.chapter-list {
+   width: 80%;
+   margin-left: 200px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+   list-style-type: upper-roman;
+}
+
+.chapter-heading,
+.chapter-item::marker {
+   font-size: 2.6rem;
+   color: var(--primary-icon);
+}
+
+.chapter-item::marker {
+   font-weight: 600;
+}
+
+.lesson-list {
+   margin-inline-start: 20px;
+}
+
+.lesson-item::marker {
+   font-size: 1.9rem;
+   color: var(--primary-icon);
+}
+
+.lesson-heading {
+   font-size: 1.9rem;
+}
+
+.lesson-item a {
+   font-size: 1.7rem;
+}
+
+.part-list {
+   margin-inline-start: 20px;
+}
+
+.part-list li {
+   font-size: 1.7rem;
+}
+
+.part-list li::marker {
+   color: var(--primary-icon);
+}
+
+a {
+   display: inline-block;
+   padding: 5px 0;
+   text-decoration: none;
+   color: var(--primary-color);
+}
+
+a:hover {
+   text-decoration: underline;
+   text-decoration-thickness: 2px;
+   text-decoration-color: var(--primary-icon);
+}
+
+.done {
+   display: inline-block;
+   min-width: 27px;
+   font-size: 23px;
+   color: var(--primary-icon);
+}
+
+.not-done {
+   display: inline-block;
+   width: 5px;
+   height: 5px;
+   margin-right: 18px;
+   border-radius: 50%;
+   background: #fff;
+   box-shadow: -8px 0 #fff, 8px 0 #fff;
+   animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+   33% {
+      background: #fff;
+      box-shadow: -8px 0 var(--primary-icon), 8px 0 #fff;
+   }
+
+   66% {
+      background: var(--primary-icon);
+      box-shadow: -8px 0 #fff, 8px 0 #fff;
+   }
+
+   100% {
+      background: #fff;
+      box-shadow: -8px 0 #fff, 8px 0 var(--primary-icon);
+   }
+}

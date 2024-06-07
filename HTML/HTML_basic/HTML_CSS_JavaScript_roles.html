@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vai trò của HTML, CSS, Javascript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../../assets/base.css">
+</head>
+
+<body style="background-color: #252525;">
+  <p id="paragraph">Hãy CLICK vào đây 😉</p>
+
+  <style>
+    #paragraph {
+      font-size: 18px;
+      color: red;
+    }
+  </style>
+
+  <script>
+    const p = document.getElementById('paragraph');
+    p.onclick = function() {
+      this.innerText = 'Bạn đã CLICK vào đoạn văn bản!';
+    };
+  </script>
+</body>
+
+</html>
